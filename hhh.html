@@ -1,0 +1,190 @@
+<html lang="en"><head>
+    <meta name="viewport" content="width=device-width">
+    <title>ESMS - Student Schedule Table</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link href="/lib/datatables/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/js/select.dataTables.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/dist/css/vertical-layout-light/style.css">
+    <link rel="shortcut icon" href="/dist/images/favicon.png">
+    <!-- endinject -->
+
+
+    <link href="/dist/css/Login.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div>
+        
+
+
+<div id="main_div" style="overflow:scroll">
+    <h1 class="text-xl" style="text-align:center; margin-top:0"> Student Schedule Table</h1>
+    <div style="float:right">
+        <a class="btn btn-succes text-white" id="btnExport" onclick="ExportToExcel('xlsx')" style="background-color: #1BABA3; height:45px;"><i class="menu-icon mdi mdi-download pt-2 mdi-18px"></i>Download</a>
+    </div>
+    <div id="calendar" style="margin:70px;">
+        <hr style="clear: both; font-weight: bold;">
+            <header>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="logo.png" style="padding-right:5px;">
+                            </div>
+                            <div class="col-8">
+                                <div class="row pt-5 pb-3">
+                                    <div><p style="font-size: 25px; font-weight: bold; padding-top:5px;">Pharos University in Alexandria</p></div>
+                                    <hr style="clear:both; margin-top:5px;">
+                                    <div>
+                                        <div class="pt-1 pb-1">
+                                            <p style="font-size:20px;">Faculty of Languages and translation</p>
+                                        </div>
+                                        <p style="font-size:20px;">Department of English Language </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                    <div class="col">
+                        <div class="row pt-5 pb-3" style="padding-top:5px;">
+                            <div><p style="font-size:20px;"><span style="font-weight: bold;">Student Name:</span> Habiba Alaa Ibrahim Ahmed Eid </p></div>
+                            <div class="pt-1 pb-1">
+                                <p style="font-size:20px;"><span style="font-weight: bold;">Student ID:</span> 202403491</p>
+                            </div>
+                            <p style="font-size:20px;"><span style="font-weight: bold;">Student Email:</span> 202403491@pua.edu.eg</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+                <h2 class="text-xl" style="text-align: center; margin-top: 20px; margin-bottom: 20px;"> 2026 SPRING Exam Schedule</h2>
+            <div class="row">
+    <table class="table border-2" cellspacing="0" align="center" style="border: 1pt solid black; font-size:0.8rem">
+        <tbody>
+            <tr style="border: 1pt solid black;">
+                <td align="center" height="50" width="100" style="border: 1pt solid black;">
+                    <b>Day/Period</b>
+                </td>
+                <td align="center" width="100" style="border: 1pt solid black;">
+                    <b>09:00 AM - 10:00 AM</b>
+                </td>
+                <td align="center" width="100" style="border: 1pt solid black;">
+                    <b>11:00 AM - 12:00 PM</b>
+                </td>
+                <td align="center" width="100" style="border: 1pt solid black;">
+                    <b>12:15 PM - 01:15 PM</b>
+                </td>
+                <td align="center" width="100" style="border: 1pt solid black;">
+                    <b>12:45 PM - 01:45 PM</b>
+                </td>
+                <td align="center" width="100" style="border: 1pt solid black;">
+                    <b>03:30 PM - 04:300 PM</b>
+                </td>
+            </tr>
+
+            <!-- Sunday -->
+            <tr style="border: 1pt solid black;">
+                <td align="center" style="border: 1pt solid black;">
+                    <b>Sunday - 29/03/2026</b>
+                </td>
+                <td align="center" style="border: 1pt solid black;">
+                    <p>English Language - UGE 00</p>
+                    <p>Room [ D232 ]</p>
+                </td>
+                <td style="border: 1pt solid black;"></td>
+                <td align="center" style="border: 1pt solid black;">
+                    <p>Introduction to Linguistics - EN 201</p>
+                    <p>Room [ D320 ]</p>
+                </td>
+                <td style="border: 1pt solid black;"></td>
+                <td style="border: 1pt solid black;"></td>
+            </tr>
+
+            <!-- Tuesday -->
+            <tr style="border: 1pt solid black;">
+                <td align="center" style="border: 1pt solid black;">
+                    <b>Tuesday - 31/03/2026</b>
+                </td>
+                <td style="border: 1pt solid black;"></td>
+                <td align="center" style="border: 1pt solid black;">
+                    <p>Business - BUS 101</p>
+                    <p>Room [ D232 ]</p>
+                </td>
+                <td style="border: 1pt solid black;"></td>
+                <td style="border: 1pt solid black;"></td>
+                <td align="center" style="border: 1pt solid black;">
+                    <p>German - GER 101</p>
+                    <p>Room [ D232 ]</p>
+                </td>
+            </tr>
+
+            <!-- Wednesday -->
+            <tr style="border: 1pt solid black;">
+                <td align="center" style="border: 1pt solid black;">
+                    <b>Wednesday - 01/04/2026</b>
+                </td>
+                <td align="center" style="border: 1pt solid black;">
+                    <p>Arabic Language - GL 01</p>
+                    <p>Room [ D332 ]</p>
+                </td>
+                <td style="border: 1pt solid black;"></td>
+                <td style="border: 1pt solid black;"></td>
+                <td align="center" style="border: 1pt solid black;">
+                    <p>Translation - EN 202</p>
+                    <p>Room [ D320 ]</p>
+                </td>
+                <td style="border: 1pt solid black;"></td>
+            </tr>
+
+            <!-- Thursday -->
+            <tr style="border: 1pt solid black;">
+                <td align="center" style="border: 1pt solid black;">
+                    <b>Thursday - 02/04/2026</b>
+                </td>
+                <td style="border: 1pt solid black;"></td>
+                <td align="center" style="border: 1pt solid black;">
+                    <p>Introduction to Literature - EN 203</p>
+                    <p>Room [ D318 ]</p>
+                </td>
+                <td style="border: 1pt solid black;"></td>
+                <td style="border: 1pt solid black;"></td>
+                <td align="center" style="border: 1pt solid black;">
+                    <p>Arabic Skills - ARB 102</p>
+                    <p>Room [ D232 ]</p>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+    </div>
+</div>
+<script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+<script>
+
+
+    function ExportToExcel(type, fn, dl) {
+
+        var elt = document.getElementById('calendar');
+        var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+        return dl ?
+            XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+            XLSX.writeFile(wb, fn || ('Exam Schedule.' + (type || 'xlsx')));
+
+    }
+</script>
+;
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+
+
+
+
+</body></html>
